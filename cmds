@@ -1,0 +1,3 @@
+tcpdump -i eth0 -c 100000 tcp and dst port 8889 -w 100000.cap
+tshart -r > 100000.tshark
+./deal 10000.tshark > 100000.loss
